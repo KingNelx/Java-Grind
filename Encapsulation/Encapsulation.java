@@ -25,10 +25,19 @@ public class Encapsulation {
         Scanner input = new Scanner(System.in);
         Business s1 = new Business();
         ArrayList<String>s2 = new ArrayList<>();
-        s2.add("King Nel");
-        s2.add(" Invo ");
+        int count = 0;
+        String partner;
+        System.out.print(" How many Business partners you have?: ");
+        int partners = input.nextInt();
 
-        s1.setPartner(s2);
-        System.out.println(s1.getPartner());
+        for(int index = 0; index < partners; index++){
+            System.out.println(" Indicate your partners ");
+            System.out.print("Partner no." + count +": " );
+            partner = input.nextLine();
+            s2.add(partner);
+
+        }
+
+        System.out.println(s2);
     }
 }
