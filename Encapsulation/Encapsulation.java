@@ -4,6 +4,7 @@ class Game{
     private String Name;
     private String Developer;
     private String ShortDescription;
+    private String Genre;
     private int NumberOfCopiesSell;
     private double totalAssets;
     public double bonusAsset = 2.5;
@@ -15,6 +16,30 @@ class Game{
         }else{
             System.out.println(" No Games has been sold for today. Total asset is: " + totalAssets + "$");
         }
+    }
+
+    public void setName(){
+
+    }
+
+    public void setDeveloper(){
+
+    }
+
+    public void setShortDescription(){
+
+    }
+
+    public void setGenre(){
+
+    }
+
+    public void setNumberOfCopiesSell(){
+
+    }
+
+    public void setTotalAssets(){
+
     }
 }
 
