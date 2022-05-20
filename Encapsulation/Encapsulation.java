@@ -1,5 +1,5 @@
 package Encapsulation;
-import java.util.ArrayList;
+
 
 class Game{
     private String Name;
@@ -70,7 +70,11 @@ class Game{
     }
 
     public void setCost(double Cost){
-        this.Cost = Cost;
+        if(Cost > 0.0){
+            this.Cost = Cost;
+        }else{
+            this.Cost = 0;
+        }
     }
 
     public double getCost(){
@@ -78,9 +82,12 @@ class Game{
     }
 
     public void setRating(int Rating){
-        this.Rating = Rating;
+        if(Rating > 0){
+            this.Rating = Rating;
+        }else{
+            this.Rating = 1;
+        }
     }
-
     public int getRating(){
         return Rating;
     }
@@ -96,6 +103,27 @@ class Game{
 
 class Manager{
     String ManagerName;
+    Manager(String ManagerName){
+        this.ManagerName = ManagerName;
+        System.out.println(" Manager: " + ManagerName);
+    }
+
+    public void Manager(Game game, String Name, String Developer, String Owner, String Company,
+                        String Genre, String OnlineOrOffline, String Reviews, double Cost, int Rating, int Duration){
+
+            game.setName(Name);
+            game.setDeveloper(Developer);
+            game.setOwner(Owner);
+            game.setCompany(Company);
+            game.setGenre(Genre);
+            game.setOnlineOrOffline(OnlineOrOffline);
+            game.setReview(Reviews);
+            game.setCost(Cost);
+            game.setRating(Rating);
+            game.setDuration(Duration);
+
+            System.out.println("");
+    }
 }
 
 public class Encapsulation{
