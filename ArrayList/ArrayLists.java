@@ -11,16 +11,23 @@ public class ArrayLists {
         Scanner inputAge = new Scanner(System.in);
 
         String names;
-        int ages;
+        int newValue;
 
         Names.add("Jonel");
         Names.add("Mark");
         Names.add("Elon");
         Names.add("Steve");
 
-
         for(String name : Names){
             System.out.println(name);
+        }
+        System.out.print(" Enter a name to remove in the lists: ");
+        names = inputNames.nextLine();
+
+        Names.remove(names);
+
+        for(String newNames : Names){
+            System.out.println(newNames);
         }
 
         Age.add(21);
@@ -30,6 +37,15 @@ public class ArrayLists {
 
         for(int age : Age){
             System.out.println(age);
+        }
+
+        System.out.print(" Enter a value to remove in the lists: ");
+        newValue = inputAge.nextInt();
+
+        Age.remove(Integer.valueOf(newValue));
+
+        for(int newAges : Age){
+            System.out.println(newAges);
         }
     }
 }
