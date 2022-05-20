@@ -1,13 +1,18 @@
 package Encapsulation;
 
-class DotaGame{
-
+class Game{
+    private String Name;
+    private String Developer;
+    private String
 }
 
 class Manager{
-
+    String ManagerName;
 }
 
+class AnotherPerson{
+    String PersonName;
+}
 
 
 public class Encapsulation{
