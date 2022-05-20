@@ -108,7 +108,7 @@ class Manager{
         System.out.println(" Manager: " + ManagerName);
     }
 
-    public void Manager(Game game, String Name, String Developer, String Owner, String Company,
+    public void ManagerReviews(Game game, String Name, String Developer, String Owner, String Company,
                         String Genre, String OnlineOrOffline, String Reviews, double Cost, int Rating, int Duration){
 
             game.setName(Name);
@@ -122,7 +122,17 @@ class Manager{
             game.setRating(Rating);
             game.setDuration(Duration);
 
-            System.out.println("");
+            System.out.println(" Game Name: " + game.getName());
+            System.out.println(" Game Developer: " + game.getDeveloper());
+            System.out.println(" Game Owner: " + game.getOwner());
+            System.out.println(" Game Company: " + game.getCompany());
+            System.out.println(" Game Genre: " + game.getGenre());
+            System.out.println(" Game mode: " + game.getOnlineOrOffline());
+            System.out.println(" Game Reviews: " + game.getReviews());
+            System.out.println(" Game Total Cost: $" +game.getCost() +"USD");
+            System.out.println(" Game Rating: " + game.getRating());
+            System.out.println(" Game Duration: " + game.getDuration());
+
     }
 }
 
