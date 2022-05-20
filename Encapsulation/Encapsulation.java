@@ -109,7 +109,7 @@ class Manager{
     }
 
     public void ManagerReviews(Game game, String Name, String Developer, String Owner, String Company,
-                        String Genre, String OnlineOrOffline, String Reviews, double Cost, int Rating, int Duration){
+                        String Genre, String OnlineOrOffline,  double Cost, int Duration){
 
             game.setName(Name);
             game.setDeveloper(Developer);
@@ -117,9 +117,7 @@ class Manager{
             game.setCompany(Company);
             game.setGenre(Genre);
             game.setOnlineOrOffline(OnlineOrOffline);
-            game.setReview(Reviews);
             game.setCost(Cost);
-            game.setRating(Rating);
             game.setDuration(Duration);
 
             System.out.println(" Game Name: " + game.getName());
@@ -128,16 +126,42 @@ class Manager{
             System.out.println(" Game Company: " + game.getCompany());
             System.out.println(" Game Genre: " + game.getGenre());
             System.out.println(" Game mode: " + game.getOnlineOrOffline());
-            System.out.println(" Game Reviews: " + game.getReviews());
             System.out.println(" Game Total Cost: $" +game.getCost() +"USD");
-            System.out.println(" Game Rating: " + game.getRating());
-            System.out.println(" Game Duration: " + game.getDuration());
+            System.out.println(" Game Duration: " + game.getDuration() +"Days");
+    }
+}
 
+class Player{
+    String name;
+    String favoriteGame;
+
+    Player(String name, String favoriteGame){
+        this.name = name;
+        this.favoriteGame = favoriteGame;
+
+        System.out.println(" Player name: " + name);
+        System.out.println(" Pro Player at: " + favoriteGame);
+    }
+
+    public void PlayerReviews(Game myGame, String Reviews, int Rating){
+        myGame.setReview(Reviews);
+        myGame.setRating(Rating);
+
+        System.out.println(" Player Review: " + myGame.getReviews());
+        System.out.println(" Player Rate: " + myGame.getRating());
     }
 }
 
 public class Encapsulation{
     public static void main (String[]args){
+        Manager manager = new Manager(" John Doe ");
+        manager.ManagerReviews(new Game(), " Pokemon ", " Jonel Tapia ", " John Hanke ", " Niantic ",
+                " Adventure ", " Online ", 1700.00, 780);
+
+        System.out.println("\n");
+
+        Player player = new Player(" KingNelx ", " Dota2 ");
+        player.PlayerReviews(new Game(), "Good Game", -12);
 
     }
 }
