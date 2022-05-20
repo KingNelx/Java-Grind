@@ -5,6 +5,7 @@ class Game{
     private String Developer;
     private String ShortDescription;
     private String Genre;
+    private String Reviews;
     private int NumberOfCopiesSell;
     private double totalAssets;
     public double bonusAsset = 2.5;
@@ -18,24 +19,50 @@ class Game{
         }
     }
 
-    public void setName(){
-
+    public void setName(String name){
+        this.Name = name;
     }
 
-    public void setDeveloper(){
-
+    public String getName(){
+        return Name;
     }
 
-    public void setShortDescription(){
-
+    public void setDeveloper(String developer){
+        this.Developer = developer;
     }
 
-    public void setGenre(){
-
+    public String getDeveloper(){
+        return Developer;
     }
 
-    public void setNumberOfCopiesSell(){
 
+    public void setShortDescription(String description){
+        this.ShortDescription = description;
+    }
+
+    public String getShortDescription(){
+        return ShortDescription;
+    }
+
+    public void setGenre(String genre){
+        this.Genre = genre;
+    }
+
+    public String getGenre(){
+        return Genre;
+    }
+
+    public void setReviews(String reviews){
+        if(reviews.equals("negative")){
+
+        }
+    }
+    public void setNumberOfCopiesSell(int copies){
+        this.NumberOfCopiesSell = copies;
+    }
+
+    public int getNumberOfCopiesSell(){
+        return NumberOfCopiesSell;
     }
 
     public void setTotalAssets(){
