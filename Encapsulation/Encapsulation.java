@@ -121,7 +121,7 @@ class Manager{
             game.setDuration(Duration);
 
             System.out.println(" Game Name: " + game.getName());
-            System.out.println(" Game Developer: " + game.getDeveloper());
+            System.out.println(" Game GoogleDeveloper: " + game.getDeveloper());
             System.out.println(" Game Owner: " + game.getOwner());
             System.out.println(" Game Company: " + game.getCompany());
             System.out.println(" Game Genre: " + game.getGenre());
