@@ -35,7 +35,7 @@ public class GoogleDeveloper {
     }
 
     public void setPosition(String Position){
-        this.Position = Position.toLowerCase() + " developer";
+        this.Position = Position.toLowerCase();
     }
     public String getPosition(){
         return  Position;
@@ -60,19 +60,23 @@ public class GoogleDeveloper {
     }
 
     public void Bonus(){
-        if(Position.equals("senior level") || Position.equals("senior level developer")){
-            System.out.println(" Current Salary is: $" + getSalary());
-            Salary = Salary + 900;
-            System.out.println(" " + Name + " salary is: $" + getSalary());
-        }else if (Position.equals("mid level") || Position.equals("Mid Level Developer")){
-            System.out.println(" Current Salary is: $" + getSalary());
-            Salary = Salary + 700;
-            System.out.println(" " +  Name + " salary is: $" + getSalary());
-        }else if (Position.equals("junior level") || Position.equals("Junior level Developer")){
-            System.out.println(" Current Salary is: $" + getSalary());
-            Salary = Salary + 500;
-            System.out.println(" " +  Name + " salary is: $" + getSalary());
-        }else
-            System.out.println(" " + Name + " salary is: $" + getSalary());
+        switch (Position) {
+            case "senior", "senior level" -> {
+                System.out.println(" Current Salary is: $" + getSalary());
+                Salary = Salary + 900;
+                System.out.println(" " + Name + " salary is: $" + getSalary());
+            }
+            case "mid", "mid level" -> {
+                System.out.println(" Current Salary is: $" + getSalary());
+                Salary = Salary + 700;
+                System.out.println(" " + Name + " salary is: $" + getSalary());
+            }
+            case "junior", "junior level" -> {
+                System.out.println(" Current Salary is: $" + getSalary());
+                Salary = Salary + 500;
+                System.out.println(" " + Name + " salary is: $" + getSalary());
+            }
+            default -> System.out.println(" " + Name + " salary is: $" + getSalary());
+        }
     }
 }

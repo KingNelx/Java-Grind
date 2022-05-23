@@ -7,14 +7,14 @@ public class Inheritance {
         GatherInfo s2 = new GatherInfo();
         RustGoogleDeveloper s3 = new RustGoogleDeveloper();
 
-        s3.setName(s2.Name);
-        s3.setAge(s2.Age);
-        s3.setCompany(s2.Company);
-        s3.setPosition(s2.Position);
-        s3.setSalary(s2.Salary);
+        g1.setName(s2.Name);
+        g1.setAge(s2.Age);
+        g1.setCompany(s2.Company);
+        g1.setPosition(s2.Position);
+        g1.setSalary(s2.Salary);
 
-        s3.printData();
-        s3.Bonus();
+        g1.printData();
+        g1.Bonus();
 
 
     }
