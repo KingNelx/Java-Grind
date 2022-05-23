@@ -6,7 +6,9 @@ public class InheritanceII {
         Child s2 = new Child();
 
         s1.name = "Jonel";
+        s1.myAge(22);
         s1.printData();
         s2.printData();
+        s2.myAge(21);
     }
 }

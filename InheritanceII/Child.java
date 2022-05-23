@@ -8,4 +8,11 @@ public class Child extends  Parent{
     public void printData(){
         System.out.println("The name is: " + name);
     }
+
+    @Override
+    public void myAge(int age){
+        super.myAge(age);
+    }
+
+
 }
