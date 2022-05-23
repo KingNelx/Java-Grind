@@ -5,5 +5,6 @@ public class AnotherPerson extends Person{
 
     public void printData() {
         super.printData();
+        System.out.println(" My name is: " + getName());
     }
 }
