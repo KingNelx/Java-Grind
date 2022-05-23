@@ -19,7 +19,7 @@ public class GatherInfo {
         input.nextLine();
         System.out.print(" Enter your company: ");
         Company = input.nextLine();
-        System.out.print(" Enter your position: ");
+        System.out.print(" Enter your position [Senior level/Mid level/Junior level]: ");
         Position = input.nextLine();
         System.out.print(" Enter your salary: ");
         Salary = input.nextDouble();

@@ -3,16 +3,19 @@ package Inheritance;
 public class Inheritance {
 
     public static void main (String[]args){
-        GoogleDeveloper s1 = new GoogleDeveloper();
+        GoogleDeveloper g1 = new GoogleDeveloper();
         GatherInfo s2 = new GatherInfo();
+        RustGoogleDeveloper s3 = new RustGoogleDeveloper();
 
-        s1.setName(s2.Name);
-        s1.setAge(s2.Age);
-        s1.setCompany(s2.Company);
-        s1.setPosition(s2.Position);
-        s1.setSalary(s2.Salary);
+        s3.setName(s2.Name);
+        s3.setAge(s2.Age);
+        s3.setCompany(s2.Company);
+        s3.setPosition(s2.Position);
+        s3.setSalary(s2.Salary);
 
-        s1.printData();
-        s1.Bonus();
+        s3.printData();
+        s3.Bonus();
+
+
     }
 }
