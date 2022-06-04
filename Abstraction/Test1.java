@@ -14,17 +14,17 @@ public class Test1 extends Test{
     @Override
 
     public void printData() {
-        System.out.println(getTitle());
-        System.out.println(getPassingScore());
+        System.out.println(" Title is: " + getTitle());
+        System.out.println(" Passing score is: " + getPassingScore());
 
     }
 
     @Override
     public void checkScore(int myScore) {
         if(myScore >= 85){
-            System.out.println(" Passing Score");
+            System.out.println(" Pass ");
         }else{
-            System.out.println(" Fail Score ");
+            System.out.println(" Fail ");
         }
     }
 }

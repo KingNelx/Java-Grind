@@ -12,5 +12,7 @@ public class Abstraction {
         s1.setPassingScore(90);
         s1.printData();
         s1.checkScore(89);
+
+        s2.printData();
     }
 }

@@ -3,6 +3,7 @@ package Abstraction;
 public abstract class Test {
     private String title;
     private int passingScore;
+
     public String teacher;
     public String school;
     public int score;
