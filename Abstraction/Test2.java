@@ -30,7 +30,7 @@ public class Test2 extends Test{
             System.out.println(" Good");
         }else{
             System.out.println(" Final Score is: " + finalScore);
-            System.out.println(" Ok ");
+            System.out.println(" Ok Yes");
         }
     }
 }
