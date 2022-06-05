@@ -2,6 +2,34 @@ package AbstractionII;
 
 public class CEO extends Company {
 
+    private String empName;
+    private String job;
+    private String companyName;
+
+    public void setName(String empName){
+        this.empName = empName;
+    }
+
+    public String getName(){
+        return empName;
+    }
+
+    public void setJob(String job){
+        this.job = job;
+    }
+
+    public String getJob(){
+        return job;
+    }
+
+    public void setCompanyName(String companyName){
+        this.companyName = companyName;
+    }
+
+    public String getCompanyName(){
+        return companyName;
+    }
+
     @Override
     public boolean isBankrupt(double Assets, double Liabilities){
         return Assets > Liabilities;
@@ -37,5 +65,7 @@ public class CEO extends Company {
         gatherData(new CEO(), "Jonel", "Tapia", "Google", "USA",
                 700.70, 2256.45, 1400);
     }
+
+
 
 }
