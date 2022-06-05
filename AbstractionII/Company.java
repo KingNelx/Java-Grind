@@ -10,12 +10,10 @@ public abstract class Company {
     private double totalLiabilities;
     public double monthlySalary;
 
-    public boolean isBankrupt(double totalAssets, double totalLiabilities){
-        return totalAssets > totalLiabilities;
-    }
+    public abstract boolean isBankrupt(double totalAssets, double totalLiabilities);
 
     public abstract void printData();
-    public abstract boolean s();
+
 
 
 
