@@ -12,7 +12,10 @@ public abstract class Company {
 
     public abstract boolean isBankrupt(double totalAssets, double totalLiabilities);
 
-    public abstract void printData(Company s1);
+    public abstract void gatherData(Company s1, String firstName, String lastName, String companyName,
+                                    String location, double totalAssets, double totalLiabilities, double monthlySalary);
+
+    public abstract void printData();
 
 
     public String getFirstName() {
