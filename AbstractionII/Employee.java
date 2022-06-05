@@ -1,4 +1,5 @@
 package AbstractionII;
 
-public class Employee {
+public class Employee extends CEO{
+
 }

@@ -1,6 +1,6 @@
 package AbstractionII;
 
-public class CEO extends Company{
+public class CEO extends Company {
 
     @Override
     public boolean isBankrupt(double Assets, double Liabilities){
@@ -8,7 +8,7 @@ public class CEO extends Company{
     }
 
     @Override
-    public void printData(){
+    public void printData(Company coy){
 
     }
 }
