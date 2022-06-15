@@ -2,7 +2,7 @@ package InheritanceII;
 
 public class Class {
     private String className;
-    public int rate;
+    private int rate;
 
     public void setName(String className){
         this.className = className;
