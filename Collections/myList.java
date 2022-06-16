@@ -21,7 +21,7 @@ public class myList {
         List<String>s3 = new ArrayList<>();
         s3.add("Invoker");
         s3.add("Tinker");
-        s3.add("Invoker");
+        s3.add("Monkey King");
 
         System.out.println(s3);
         // change elements of lists

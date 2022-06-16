@@ -8,7 +8,7 @@ public class mySets {
         Set<String> set = new HashSet<String>();
         set.add("Invoker");
         set.add("Tinker");
-        set.add("Invoker");
+        set.add("Monkey King");
 
         System.out.println(set);
     }
