@@ -1,5 +1,0 @@
-package InheritanceII;
-
-class Student{
-
-}
