@@ -1,11 +1,11 @@
 package Collections;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.ArrayList;
+
 
 public class mySets {
     public static void main (String[]args){
-        Set<String> set = new HashSet<String>();
+        Set<String> set = new HashSet<>();
         set.add("Invoker");
         set.add("Tinker");
         set.add("Monkey King");
