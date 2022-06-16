@@ -17,6 +17,13 @@ public class myList {
         list2.add("Nel");
         list2.add("Awesome");
 
+        // Another list
+        List<String>s3 = new ArrayList<>();
+        s3.add("Invoker");
+        s3.add("Tinker");
+        s3.add("Invoker");
+
+        System.out.println(s3);
         // change elements of lists
         list1.set(2, "Very pogi");
         list1.get(1);
@@ -25,7 +32,7 @@ public class myList {
 
         for(String combineList : list1){
             System.out.println(combineList);
-
         }
+
     }
 }
