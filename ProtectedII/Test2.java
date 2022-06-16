@@ -1,4 +1,6 @@
 package ProtectedII;
 
-public class Test2 {
+import Protected.Test1;
+
+public class Test2 extends Test1 {
 }
