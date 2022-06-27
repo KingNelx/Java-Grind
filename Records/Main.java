@@ -6,6 +6,7 @@ public class Main {
        Test2 s2 = new Test2(21, "King");
        System.out.println(s2.name());
        System.out.println(s1);
+
    }
 
 }
